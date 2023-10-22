@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+:root{
+    --grid-size: 1;
+}
+h1{
+    text-align: center;
+    font-family: 'Public Pixel', sans-serif;
+    margin: 20px;
+}
+button{
+    background-color: transparent;
+    display: block;
+    outline: 0;
+    cursor: pointer;
+    padding: 3px 16px;
+    margin: 20px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    border: 1px solid;
+    border-radius: 6px;
+    color: #24292e;
+    background-color: #fafbfc;
+    border-color: #1b1f2326;
+    transition: .2s ease-in-out;
+}
+button:hover{
+    color: #fafbfc;
+    background-color: #24292e;
+}
+.color-input-wrapper{
+    height: 3em;
+    width: 3em;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 1px solid #24292e;
+    display: inline-flex;
+    align-items: center;
+    position: relative;
+}
+.color-input-wrapper  input[type=color] {
+    position: absolute;
+    height: 5em;
+    width: 5em;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    border: none;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(var(--grid-size), 1fr);
+    grid-template-rows: repeat(var(--grid-size), 1fr);
+    width: 400px;
+    height: 400px;
+}
+.grid-item{
+    border: 1px solid rgb(226, 226, 226);
+}
+.button-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.eraserButton{
+    color: #fafbfc;
+    background-color: #24292e;
+}
