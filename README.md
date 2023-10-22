@@ -1,5 +1,6 @@
 # PixelArt
 Pixel Art Project
+
 This is a simple web-based pixel art project that allows you to create pixel art by coloring individual grid cells. You can customize the grid size, choose colors, and even toggle an eraser mode. Here's a brief overview of the project:
 
 Project Components
